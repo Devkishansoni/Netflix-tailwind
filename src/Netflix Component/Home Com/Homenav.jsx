@@ -33,7 +33,9 @@ export default function Homenav() {
                       <option value="" className='bg-transparent'>English</option>
                       <option value="" className='bg-transparent'>Hindi</option>
                   </select>
+                  {/* <NavLink to={"Movies"}> */}
                     <button onClick={handleLogin} className='bg-red-600 rounded-md text-1xl w-[80px] text-white h-7'>Sing In</button>
+                  {/* </NavLink> */}
               </div>
           </div>
       </>

@@ -10,19 +10,22 @@ import Movies from './Netflix Component/Home Com/Movies';
 import Togglecom from './Toggle Com/Togglecom';
 import Blogs from './Blogs Component/Blogs';
 import Getmore from './Blogs Component/Getmore';
+import Innerhome from './Netflix Component/Home Com/Innerhome';
+import Form from './Userform Component/Form';
 
 function App() {
   return (
     <>
-      {/* <Main /> */}
-      
+      <Main />
       <Routes>
         <Route exact path='/' element={<Blogs/>} />
-        <Route exact path='/movie/:id' element={<Getmore/>}/>
+        <Route exact path='/movie/:id' element={<Getmore />} />
+        <Route exact path='/previoussection' element={<Blogs/>}/>
       </Routes>
-      {/* <Login/> */}
-      <Blogs/>
-      {/* <Togglecom/> */}
+      {/* <Innerhome/> */}
+      {/* <Login/>
+      <Togglecom/>
+      <Form/> */}
     </>
   );
 }

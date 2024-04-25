@@ -12,6 +12,7 @@ import Blogs from './Blogs Component/Blogs';
 import Getmore from './Blogs Component/Getmore';
 import Innerhome from './Netflix Component/Home Com/Innerhome';
 import Form from './Userform Component/Form';
+import Searchfun from './Search Component/Searchfun';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path='/movie/:id' element={<Getmore />} />
         <Route exact path='/previoussection' element={<Blogs/>}/>
       </Routes>
+      <Searchfun/>
       {/* <Innerhome/> */}
       {/* <Login/>
       <Togglecom/>
